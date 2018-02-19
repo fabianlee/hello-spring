@@ -96,5 +96,13 @@ public class HomeController {
 			out.println("Cloud properties not set");
 		}
 	}
+	
+	@RequestMapping("/myversion")
+	public void myversion(HttpServletResponse response) throws IOException {
+		response.setContentType("text/plain");
+		PrintWriter out = response.getWriter();
+		out.println("MYVERSION: " + ((String)System.getenv().get("MYVERSION")) );
+	}
+	
 
 }
