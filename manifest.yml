@@ -6,4 +6,4 @@ applications:
   random-route: true
   path: target/hello-spring-1.0.0-BUILD-SNAPSHOT
   env:
-    MYVERSION: blue1.0
+    MYVERSION: Blue1.0
